@@ -7,7 +7,21 @@
 
 ![srcreenshot](screenshot3.png)
 
+```
+D:\Development\CPP\wxWidgetsDBls
+D:\Projects\DialogBlocksProjects
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
+C:\Program Files\Microsoft Visual Studio\2022\Community
+C:\Program Files (x86)\Windows Kits\10
+```
+
 ![srcreenshot](screenshot4.png)
+
+```
+17
+17.7.6 (Microsoft Visual Studio Community 2022 (64-разрядная версия) - Current Версия 17.7.6)
+10.0.22621.0 ("C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0")
+```
 
 ![srcreenshot](screenshot5.png)
 
