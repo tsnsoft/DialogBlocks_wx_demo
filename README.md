@@ -48,6 +48,9 @@ void MainForm::OnButtonClick(wxCommandEvent& event)
 	itemTextCtrl3->SetValue(wxString::Format(wxT("%0.3f"), c)); // выводим результат в компонент c
 }
 ```
+
+![srcreenshot](vcxproj_fix.png)
+
 http://www.anthemion.co.uk/dialogblocks/
 
 https://www.wxwidgets.org/
