@@ -31,6 +31,7 @@
 
 **Full Platform SDK version**: 10.0.22621.0
 
+**Message encoding:** cp866
 
 ![srcreenshot](screenshot5.png)
 
