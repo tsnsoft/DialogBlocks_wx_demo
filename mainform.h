@@ -43,7 +43,7 @@
 #define SYMBOL_MAINFORM_STYLE wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX
 #define SYMBOL_MAINFORM_TITLE wxGetTranslation(wxString() + (wxChar) 0x0414 + (wxChar) 0x0435 + (wxChar) 0x043B + (wxChar) 0x0435 + (wxChar) 0x043D + (wxChar) 0x0438 + (wxChar) 0x0435 + wxT(" 2-") + (wxChar) 0x0445 + wxT(" ") + (wxChar) 0x0446 + (wxChar) 0x0438 + (wxChar) 0x0444 + (wxChar) 0x0440)
 #define SYMBOL_MAINFORM_IDNAME ID_MAINFORM
-#define SYMBOL_MAINFORM_SIZE wxSize(300, 300)
+#define SYMBOL_MAINFORM_SIZE wxSize(300, 328)
 #define SYMBOL_MAINFORM_POSITION wxDefaultPosition
 ////@end control identifiers
 

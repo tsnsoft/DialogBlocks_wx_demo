@@ -12,6 +12,8 @@
 // For compilers that support precompilation, includes "wx/wx.h".
 #include "wx/wxprec.h"
 
+#include "tsnsoft.xpm" // иконка
+
 #ifdef __BORLANDC__
 #pragma hdrstop
 #endif
@@ -75,7 +77,11 @@ bool MainForm::Create(wxWindow* parent, wxWindowID id, const wxString& caption, 
     wxFrame::Create( parent, id, caption, pos, size, style );
 
     CreateControls();
-    SetIcon(GetIconResource(wxT("MAIN_ICON")));
+    SetIcon(GetIconResource(wxT("tsnsoft")));
+    if (GetSizer())
+    {
+        GetSizer()->SetSizeHints(this);
+    }
     Centre();
 	////@end MainForm creation
 	return true;
@@ -115,29 +121,29 @@ void MainForm::CreateControls()
     MainForm* itemFrame1 = this;
 
     wxGridBagSizer* itemGridBagSizer1 = new wxGridBagSizer(0, 0);
-    itemGridBagSizer1->SetEmptyCellSize(wxSize(10, 20));
+    itemGridBagSizer1->SetEmptyCellSize(wxSize(10, 19));
     itemFrame1->SetSizer(itemGridBagSizer1);
 
     wxStaticText* itemStaticText1 = new wxStaticText( itemFrame1, wxID_STATIC, wxGetTranslation(wxString() + (wxChar) 0x0412 + (wxChar) 0x0432 + (wxChar) 0x0435 + (wxChar) 0x0434 + (wxChar) 0x0438 + (wxChar) 0x0442 + (wxChar) 0x0435 + wxT(" ") + (wxChar) 0x0430 + wxT(":")), wxDefaultPosition, wxDefaultSize, 0 );
-    itemGridBagSizer1->Add(itemStaticText1, wxGBPosition(1, 2), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+    itemGridBagSizer1->Add(itemStaticText1, wxGBPosition(1, 2), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 4);
 
     wxTextCtrl* itemTextCtrl1 = new wxTextCtrl( itemFrame1, ID_TEXTCTRL_a, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-    itemGridBagSizer1->Add(itemTextCtrl1, wxGBPosition(1, 6), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+    itemGridBagSizer1->Add(itemTextCtrl1, wxGBPosition(1, 6), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 4);
 
     wxStaticText* itemStaticText2 = new wxStaticText( itemFrame1, wxID_STATIC, wxGetTranslation(wxString() + (wxChar) 0x0412 + (wxChar) 0x0432 + (wxChar) 0x0435 + (wxChar) 0x0434 + (wxChar) 0x0438 + (wxChar) 0x0442 + (wxChar) 0x0435 + wxT(" b:")), wxDefaultPosition, wxDefaultSize, 0 );
-    itemGridBagSizer1->Add(itemStaticText2, wxGBPosition(3, 2), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+    itemGridBagSizer1->Add(itemStaticText2, wxGBPosition(3, 2), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 4);
 
     wxButton* itemButton3 = new wxButton( itemFrame1, ID_BUTTON, wxGetTranslation(wxString() + (wxChar) 0x041F + (wxChar) 0x043E + (wxChar) 0x0434 + (wxChar) 0x0435 + (wxChar) 0x043B + (wxChar) 0x0438 + (wxChar) 0x0442 + (wxChar) 0x044C), wxDefaultPosition, wxDefaultSize, 0 );
-    itemGridBagSizer1->Add(itemButton3, wxGBPosition(5, 6), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+    itemGridBagSizer1->Add(itemButton3, wxGBPosition(5, 6), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 4);
 
     wxStaticText* itemStaticText4 = new wxStaticText( itemFrame1, wxID_STATIC_Result, wxGetTranslation(wxString() + (wxChar) 0x0420 + (wxChar) 0x0435 + (wxChar) 0x0437 + (wxChar) 0x0443 + (wxChar) 0x043B + (wxChar) 0x044C + (wxChar) 0x0442 + (wxChar) 0x0430 + (wxChar) 0x0442), wxDefaultPosition, wxDefaultSize, 0 );
-    itemGridBagSizer1->Add(itemStaticText4, wxGBPosition(7, 2), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+    itemGridBagSizer1->Add(itemStaticText4, wxGBPosition(7, 2), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 4);
 
     wxTextCtrl* itemTextCtrl2 = new wxTextCtrl( itemFrame1, ID_TEXTCTRL_b, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-    itemGridBagSizer1->Add(itemTextCtrl2, wxGBPosition(3, 6), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+    itemGridBagSizer1->Add(itemTextCtrl2, wxGBPosition(3, 6), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 4);
 
     wxTextCtrl* itemTextCtrl3 = new wxTextCtrl( itemFrame1, ID_TEXTCTRL_c, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_READONLY );
-    itemGridBagSizer1->Add(itemTextCtrl3, wxGBPosition(7, 6), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+    itemGridBagSizer1->Add(itemTextCtrl3, wxGBPosition(7, 6), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 4);
 
 	////@end MainForm content construction
 }
@@ -172,15 +178,13 @@ wxBitmap MainForm::GetBitmapResource(const wxString& name)
 wxIcon MainForm::GetIconResource(const wxString& name)
 {
 	// Icon retrieval
-////@begin MainForm icon retrieval
     wxUnusedVar(name);
-    if (name == wxT("MAIN_ICON"))
+    if (name == wxT("tsnsoft"))
     {
-        wxIcon icon(wxT("MAIN_ICON"), wxBITMAP_TYPE_ICO_RESOURCE);
-        return icon;
-    }
+	wxIcon icon(tsnsoft_xpm);
+	return icon;
+	}
     return wxNullIcon;
-	////@end MainForm icon retrieval
 }
 
 

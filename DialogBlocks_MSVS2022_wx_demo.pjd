@@ -10,7 +10,7 @@
     <bool name="archive_image_files">1</bool>
     <bool name="archive_xrc_files">1</bool>
     <string name="author">""</string>
-    <string name="configuration">"Release"</string>
+    <string name="configuration">"Debug"</string>
     <string name="copyright_string">"15681627-3C745D8E-630127F2"</string>
     <string name="cpp_function_declaration_comment">"	/// %BODY%
 "</string>
@@ -433,14 +433,14 @@
           <bool name="proxy-Dialog units">0</bool>
           <bool name="proxy-Enabled">1</bool>
           <string name="proxy-Event sources">""</string>
-          <bool name="proxy-Fit to content">0</bool>
+          <bool name="proxy-Fit to content">1</bool>
           <string name="proxy-Font">""</string>
           <string name="proxy-Foreground colour">""</string>
           <string name="proxy-Header filename">"mainform.h"</string>
-          <long name="proxy-Height">300</long>
+          <long name="proxy-Height">328</long>
           <string name="proxy-Help text">""</string>
           <bool name="proxy-Hidden">0</bool>
-          <string name="proxy-Icon">"MAIN_ICON"</string>
+          <string name="proxy-Icon">"tsnsoft"</string>
           <string name="proxy-Id name">"ID_MAINFORM"</string>
           <long name="proxy-Id value">10000</long>
           <string name="proxy-Implementation filename">"mainform.cpp"</string>
@@ -497,9 +497,9 @@
             <long name="owns-file">1</long>
             <string name="proxy-AlignH">"Centre"</string>
             <string name="proxy-AlignV">"Centre"</string>
-            <long name="proxy-Border">5</long>
+            <long name="proxy-Border">4</long>
             <long name="proxy-ColumnSpacing">0</long>
-            <long name="proxy-Empty cell height">20</long>
+            <long name="proxy-Empty cell height">19</long>
             <long name="proxy-Empty cell width">10</long>
             <string name="proxy-GrowableColumns">""</string>
             <string name="proxy-GrowableRows">""</string>
@@ -530,7 +530,7 @@
               <string name="proxy-AlignV">"Centre"</string>
               <string name="proxy-Background colour">""</string>
               <string name="proxy-Base class">"wxStaticText"</string>
-              <long name="proxy-Border">5</long>
+              <long name="proxy-Border">4</long>
               <string name="proxy-Class">"wxStaticText"</string>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
@@ -606,7 +606,7 @@
               <string name="proxy-AlignV">"Centre"</string>
               <string name="proxy-Background colour">""</string>
               <string name="proxy-Base class">"wxTextCtrl"</string>
-              <long name="proxy-Border">5</long>
+              <long name="proxy-Border">4</long>
               <string name="proxy-Class">"wxTextCtrl"</string>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
@@ -694,7 +694,7 @@
               <string name="proxy-AlignV">"Centre"</string>
               <string name="proxy-Background colour">""</string>
               <string name="proxy-Base class">"wxStaticText"</string>
-              <long name="proxy-Border">5</long>
+              <long name="proxy-Border">4</long>
               <string name="proxy-Class">"wxStaticText"</string>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
@@ -771,7 +771,7 @@
               <string name="proxy-AlignV">"Centre"</string>
               <string name="proxy-Background colour">""</string>
               <string name="proxy-Base class">"wxButton"</string>
-              <long name="proxy-Border">5</long>
+              <long name="proxy-Border">4</long>
               <string name="proxy-Class">"wxButton"</string>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
@@ -842,7 +842,7 @@
               <string name="proxy-AlignV">"Centre"</string>
               <string name="proxy-Background colour">""</string>
               <string name="proxy-Base class">"wxStaticText"</string>
-              <long name="proxy-Border">5</long>
+              <long name="proxy-Border">4</long>
               <string name="proxy-Class">"wxStaticText"</string>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
@@ -918,7 +918,7 @@
               <string name="proxy-AlignV">"Centre"</string>
               <string name="proxy-Background colour">""</string>
               <string name="proxy-Base class">"wxTextCtrl"</string>
-              <long name="proxy-Border">5</long>
+              <long name="proxy-Border">4</long>
               <string name="proxy-Class">"wxTextCtrl"</string>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>
@@ -1006,7 +1006,7 @@
               <string name="proxy-AlignV">"Centre"</string>
               <string name="proxy-Background colour">""</string>
               <string name="proxy-Base class">"wxTextCtrl"</string>
-              <long name="proxy-Border">5</long>
+              <long name="proxy-Border">4</long>
               <string name="proxy-Class">"wxTextCtrl"</string>
               <string name="proxy-Custom arguments">""</string>
               <string name="proxy-Custom ctor arguments">""</string>

@@ -66,3 +66,5 @@ http://www.anthemion.co.uk/dialogblocks/
 https://www.wxwidgets.org/
 
 https://visualstudio.microsoft.com/ru/vs/community/
+
+http://www.anthemion.co.uk/dialogblocks/ImageBlocks-1.06-Setup.exe
