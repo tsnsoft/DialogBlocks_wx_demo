@@ -208,7 +208,7 @@ void MainForm::OnButtonClick(wxCommandEvent& event)
 	}
 	double c = a / b; // вычисляем результат
 	if (isnan(c) || isinf(c)) { // проверяем результат на ошибки
-		wxMessageBox(wxT("c не число!")); // выводим сообщение об ошибке
+		wxMessageBox(wxT("результат не число!")); // выводим сообщение об ошибке
 		return; // выходим из функции
 	}
 	itemTextCtrl3->SetValue(wxString::Format(wxT("%0.3f"), c)); // выводим результат в компонент c
