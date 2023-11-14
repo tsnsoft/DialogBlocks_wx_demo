@@ -81,7 +81,7 @@
     <long name="image_mode">0</long>
     <long name="indent_size">4</long>
     <bool name="inline_images">0</bool>
-    <bool name="make_unicode_strings">1</bool>
+    <bool name="make_unicode_strings">0</bool>
     <long name="name_counter">0</long>
     <string name="project_encoding">"utf-8"</string>
     <string name="resource_archive">""</string>
@@ -90,11 +90,11 @@
     <string name="resource_file_implementation">"app_resources.cpp"</string>
     <string name="resource_prefix">""</string>
     <string name="resource_xrc_cpp">""</string>
-    <string name="source_encoding">"windows-1251"</string>
+    <string name="source_encoding">"utf-8"</string>
     <string name="target_wx_version">"3.2.3"</string>
     <long name="text_file_type">0</long>
     <string name="title">""</string>
-    <bool name="translate_strings">1</bool>
+    <bool name="translate_strings">0</bool>
     <bool name="use_enums">0</bool>
     <bool name="use_generated_xrc_cpp">0</bool>
     <bool name="use_help_text_for_tooltips">1</bool>
@@ -440,7 +440,7 @@
           <long name="proxy-Height">328</long>
           <string name="proxy-Help text">""</string>
           <bool name="proxy-Hidden">0</bool>
-          <string name="proxy-Icon">"tsnsoft"</string>
+          <string name="proxy-Icon">"tsnsoft.xpm"</string>
           <string name="proxy-Id name">"ID_MAINFORM"</string>
           <long name="proxy-Id value">10000</long>
           <string name="proxy-Implementation filename">"mainform.cpp"</string>
@@ -466,7 +466,7 @@
           <bool name="proxy-wxNO_BORDER">0</bool>
           <bool name="proxy-wxNO_FULL_REPAINT_ON_RESIZE">0</bool>
           <bool name="proxy-wxRAISED_BORDER">0</bool>
-          <bool name="proxy-wxRESIZE_BORDER">1</bool>
+          <bool name="proxy-wxRESIZE_BORDER">0</bool>
           <bool name="proxy-wxSIMPLE_BORDER">0</bool>
           <bool name="proxy-wxSTATIC_BORDER">0</bool>
           <bool name="proxy-wxSTAY_ON_TOP">0</bool>
@@ -1140,6 +1140,17 @@
         <long name="owns-file">1</long>
         <long name="title-mode">0</long>
         <long name="locked">1</long>
+        <document>
+          <string name="title">"tsnsoft.xpm"</string>
+          <string name="type">"image-document"</string>
+          <string name="filename">"tsnsoft.xpm"</string>
+          <string name="icon-name">"image"</string>
+          <long name="is-transient">0</long>
+          <long name="owns-file">1</long>
+          <long name="title-mode">0</long>
+          <long name="locked">0</long>
+          <long name="zoom-level">100</long>
+        </document>
       </document>
     </document>
   </documents>

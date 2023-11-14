@@ -1,9 +1,9 @@
-/////////////////////////////////////////////////////////////////////////////
+п»ї/////////////////////////////////////////////////////////////////////////////
 // Name:        mainform.cpp
 // Purpose:     
 // Author:      Sergey Talipov
 // Modified by: 
-// Created:     03/11/2023 17:35:05
+// Created:     14/11/2023 13:41:03
 // RCS-ID:      
 // Copyright:   15681627-3C745D8E-630127F2
 // Licence:     
@@ -11,8 +11,6 @@
 
 // For compilers that support precompilation, includes "wx/wx.h".
 #include "wx/wxprec.h"
-
-#include "tsnsoft.xpm" // иконка
 
 #ifdef __BORLANDC__
 #pragma hdrstop
@@ -28,6 +26,7 @@
 #include "mainform.h"
 
 ////@begin XPM images
+#include "tsnsoft.xpm"
 ////@end XPM images
 
 
@@ -35,35 +34,35 @@
  * MainForm type definition
  */
 
-IMPLEMENT_CLASS(MainForm, wxFrame)
+IMPLEMENT_CLASS( MainForm, wxFrame )
 
 
 /*
  * MainForm event table definition
  */
 
-	BEGIN_EVENT_TABLE(MainForm, wxFrame)
+BEGIN_EVENT_TABLE( MainForm, wxFrame )
 
-	////@begin MainForm event table entries
+////@begin MainForm event table entries
     EVT_BUTTON( ID_BUTTON, MainForm::OnButtonClick )
-	////@end MainForm event table entries
+////@end MainForm event table entries
 
-	END_EVENT_TABLE()
+END_EVENT_TABLE()
 
 
-	/*
-	 * MainForm constructors
-	 */
+/*
+ * MainForm constructors
+ */
 
-	MainForm::MainForm()
+MainForm::MainForm()
 {
-	Init();
+    Init();
 }
 
-MainForm::MainForm(wxWindow* parent, wxWindowID id, const wxString& caption, const wxPoint& pos, const wxSize& size, long style)
+MainForm::MainForm( wxWindow* parent, wxWindowID id, const wxString& caption, const wxPoint& pos, const wxSize& size, long style )
 {
-	Init();
-	Create(parent, id, caption, pos, size, style);
+    Init();
+    Create( parent, id, caption, pos, size, style );
 }
 
 
@@ -71,20 +70,20 @@ MainForm::MainForm(wxWindow* parent, wxWindowID id, const wxString& caption, con
  * MainForm creator
  */
 
-bool MainForm::Create(wxWindow* parent, wxWindowID id, const wxString& caption, const wxPoint& pos, const wxSize& size, long style)
+bool MainForm::Create( wxWindow* parent, wxWindowID id, const wxString& caption, const wxPoint& pos, const wxSize& size, long style )
 {
-	////@begin MainForm creation
+////@begin MainForm creation
     wxFrame::Create( parent, id, caption, pos, size, style );
 
     CreateControls();
-    SetIcon(GetIconResource(wxT("tsnsoft")));
+    SetIcon(GetIconResource(wxT("tsnsoft.xpm")));
     if (GetSizer())
     {
         GetSizer()->SetSizeHints(this);
     }
     Centre();
-	////@end MainForm creation
-	return true;
+////@end MainForm creation
+    return true;
 }
 
 
@@ -94,8 +93,8 @@ bool MainForm::Create(wxWindow* parent, wxWindowID id, const wxString& caption, 
 
 MainForm::~MainForm()
 {
-	////@begin MainForm destruction
-	////@end MainForm destruction
+////@begin MainForm destruction
+////@end MainForm destruction
 }
 
 
@@ -105,8 +104,8 @@ MainForm::~MainForm()
 
 void MainForm::Init()
 {
-	////@begin MainForm member initialisation
-	////@end MainForm member initialisation
+////@begin MainForm member initialisation
+////@end MainForm member initialisation
 }
 
 
@@ -114,29 +113,28 @@ void MainForm::Init()
  * Control creation for MainForm
  */
 
-
 void MainForm::CreateControls()
-{
-	////@begin MainForm content construction
+{    
+////@begin MainForm content construction
     MainForm* itemFrame1 = this;
 
     wxGridBagSizer* itemGridBagSizer1 = new wxGridBagSizer(0, 0);
     itemGridBagSizer1->SetEmptyCellSize(wxSize(10, 19));
     itemFrame1->SetSizer(itemGridBagSizer1);
 
-    wxStaticText* itemStaticText1 = new wxStaticText( itemFrame1, wxID_STATIC, wxGetTranslation(wxString() + (wxChar) 0x0412 + (wxChar) 0x0432 + (wxChar) 0x0435 + (wxChar) 0x0434 + (wxChar) 0x0438 + (wxChar) 0x0442 + (wxChar) 0x0435 + wxT(" ") + (wxChar) 0x0430 + wxT(":")), wxDefaultPosition, wxDefaultSize, 0 );
+    wxStaticText* itemStaticText1 = new wxStaticText( itemFrame1, wxID_STATIC, wxT("Р’РІРµРґРёС‚Рµ Р°:"), wxDefaultPosition, wxDefaultSize, 0 );
     itemGridBagSizer1->Add(itemStaticText1, wxGBPosition(1, 2), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 4);
 
     wxTextCtrl* itemTextCtrl1 = new wxTextCtrl( itemFrame1, ID_TEXTCTRL_a, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
     itemGridBagSizer1->Add(itemTextCtrl1, wxGBPosition(1, 6), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 4);
 
-    wxStaticText* itemStaticText2 = new wxStaticText( itemFrame1, wxID_STATIC, wxGetTranslation(wxString() + (wxChar) 0x0412 + (wxChar) 0x0432 + (wxChar) 0x0435 + (wxChar) 0x0434 + (wxChar) 0x0438 + (wxChar) 0x0442 + (wxChar) 0x0435 + wxT(" b:")), wxDefaultPosition, wxDefaultSize, 0 );
+    wxStaticText* itemStaticText2 = new wxStaticText( itemFrame1, wxID_STATIC, wxT("Р’РІРµРґРёС‚Рµ b:"), wxDefaultPosition, wxDefaultSize, 0 );
     itemGridBagSizer1->Add(itemStaticText2, wxGBPosition(3, 2), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 4);
 
-    wxButton* itemButton3 = new wxButton( itemFrame1, ID_BUTTON, wxGetTranslation(wxString() + (wxChar) 0x041F + (wxChar) 0x043E + (wxChar) 0x0434 + (wxChar) 0x0435 + (wxChar) 0x043B + (wxChar) 0x0438 + (wxChar) 0x0442 + (wxChar) 0x044C), wxDefaultPosition, wxDefaultSize, 0 );
+    wxButton* itemButton3 = new wxButton( itemFrame1, ID_BUTTON, wxT("РџРѕРґРµР»РёС‚СЊ"), wxDefaultPosition, wxDefaultSize, 0 );
     itemGridBagSizer1->Add(itemButton3, wxGBPosition(5, 6), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 4);
 
-    wxStaticText* itemStaticText4 = new wxStaticText( itemFrame1, wxID_STATIC_Result, wxGetTranslation(wxString() + (wxChar) 0x0420 + (wxChar) 0x0435 + (wxChar) 0x0437 + (wxChar) 0x0443 + (wxChar) 0x043B + (wxChar) 0x044C + (wxChar) 0x0442 + (wxChar) 0x0430 + (wxChar) 0x0442), wxDefaultPosition, wxDefaultSize, 0 );
+    wxStaticText* itemStaticText4 = new wxStaticText( itemFrame1, wxID_STATIC_Result, wxT("Р РµР·СѓР»СЊС‚Р°С‚"), wxDefaultPosition, wxDefaultSize, 0 );
     itemGridBagSizer1->Add(itemStaticText4, wxGBPosition(7, 2), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 4);
 
     wxTextCtrl* itemTextCtrl2 = new wxTextCtrl( itemFrame1, ID_TEXTCTRL_b, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
@@ -145,9 +143,8 @@ void MainForm::CreateControls()
     wxTextCtrl* itemTextCtrl3 = new wxTextCtrl( itemFrame1, ID_TEXTCTRL_c, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_READONLY );
     itemGridBagSizer1->Add(itemTextCtrl3, wxGBPosition(7, 6), wxGBSpan(1, 1), wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL, 4);
 
-	////@end MainForm content construction
+////@end MainForm content construction
 }
-
 
 /*
  * Should we show tooltips?
@@ -155,36 +152,38 @@ void MainForm::CreateControls()
 
 bool MainForm::ShowToolTips()
 {
-	return true;
+    return true;
 }
 
 /*
  * Get bitmap resources
  */
 
-wxBitmap MainForm::GetBitmapResource(const wxString& name)
+wxBitmap MainForm::GetBitmapResource( const wxString& name )
 {
-	// Bitmap retrieval
+    // Bitmap retrieval
 ////@begin MainForm bitmap retrieval
     wxUnusedVar(name);
     return wxNullBitmap;
-	////@end MainForm bitmap retrieval
+////@end MainForm bitmap retrieval
 }
 
 /*
  * Get icon resources
  */
 
-wxIcon MainForm::GetIconResource(const wxString& name)
+wxIcon MainForm::GetIconResource( const wxString& name )
 {
-	// Icon retrieval
+    // Icon retrieval
+////@begin MainForm icon retrieval
     wxUnusedVar(name);
-    if (name == wxT("tsnsoft"))
+    if (name == wxT("tsnsoft.xpm"))
     {
-	wxIcon icon(tsnsoft_xpm);
-	return icon;
-	}
+        wxIcon icon(tsnsoft_xpm);
+        return icon;
+    }
     return wxNullIcon;
+////@end MainForm icon retrieval
 }
 
 
@@ -192,26 +191,26 @@ wxIcon MainForm::GetIconResource(const wxString& name)
  * wxEVT_COMMAND_BUTTON_CLICKED event handler for ID_BUTTON
  */
 
-// Рассчитать
+// Р Р°СЃСЃС‡РёС‚Р°С‚СЊ
 void MainForm::OnButtonClick(wxCommandEvent& event)
 {
-	double a, b; // входные данные
-	wxTextCtrl* itemTextCtrl1 = (wxTextCtrl*)FindWindow(ID_TEXTCTRL_a); // находим компонент a по ID
-	wxTextCtrl* itemTextCtrl2 = (wxTextCtrl*)FindWindow(ID_TEXTCTRL_b); // находим компонент b по ID
-	wxTextCtrl* itemTextCtrl3 = (wxTextCtrl*)FindWindow(ID_TEXTCTRL_c); // находим компонент c по ID
-	if (!itemTextCtrl1->GetValue().ToDouble(&a)) { // получаем значение из компонента a
-		wxMessageBox(wxT("a is not a number")); // выводим сообщение об ошибке
-		return; // выходим из функции
+	double a, b; // РІС…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ
+	wxTextCtrl* itemTextCtrl1 = (wxTextCtrl*)FindWindow(ID_TEXTCTRL_a); // РЅР°С…РѕРґРёРј РєРѕРјРїРѕРЅРµРЅС‚ a РїРѕ ID
+	wxTextCtrl* itemTextCtrl2 = (wxTextCtrl*)FindWindow(ID_TEXTCTRL_b); // РЅР°С…РѕРґРёРј РєРѕРјРїРѕРЅРµРЅС‚ b РїРѕ ID
+	wxTextCtrl* itemTextCtrl3 = (wxTextCtrl*)FindWindow(ID_TEXTCTRL_c); // РЅР°С…РѕРґРёРј РєРѕРјРїРѕРЅРµРЅС‚ c РїРѕ ID
+	if (!itemTextCtrl1->GetValue().ToDouble(&a)) { // РїРѕР»СѓС‡Р°РµРј Р·РЅР°С‡РµРЅРёРµ РёР· РєРѕРјРїРѕРЅРµРЅС‚Р° a
+		wxMessageBox(wxT("a РЅРµ С‡РёСЃР»Рѕ!")); // РІС‹РІРѕРґРёРј СЃРѕРѕР±С‰РµРЅРёРµ РѕР± РѕС€РёР±РєРµ
+		return; // РІС‹С…РѕРґРёРј РёР· С„СѓРЅРєС†РёРё
 	}
-	if (!itemTextCtrl2->GetValue().ToDouble(&b)) { // получаем значение из компонента b
-		wxMessageBox(wxT("b is not a number")); // выводим сообщение об ошибке
-		return; // выходим из функции
+	if (!itemTextCtrl2->GetValue().ToDouble(&b)) { // РїРѕР»СѓС‡Р°РµРј Р·РЅР°С‡РµРЅРёРµ РёР· РєРѕРјРїРѕРЅРµРЅС‚Р° b
+		wxMessageBox(wxT("b РЅРµ С‡РёСЃР»Рѕ!")); // РІС‹РІРѕРґРёРј СЃРѕРѕР±С‰РµРЅРёРµ РѕР± РѕС€РёР±РєРµ
+		return; // РІС‹С…РѕРґРёРј РёР· С„СѓРЅРєС†РёРё
 	}
-	double c = a / b; // вычисляем результат
-	if (isnan(c) || isinf(c)) { // проверяем результат на ошибки
-		wxMessageBox(wxT("c is not a number")); // выводим сообщение об ошибке
-		return; // выходим из функции
+	double c = a / b; // РІС‹С‡РёСЃР»СЏРµРј СЂРµР·СѓР»СЊС‚Р°С‚
+	if (isnan(c) || isinf(c)) { // РїСЂРѕРІРµСЂСЏРµРј СЂРµР·СѓР»СЊС‚Р°С‚ РЅР° РѕС€РёР±РєРё
+		wxMessageBox(wxT("c РЅРµ С‡РёСЃР»Рѕ!")); // РІС‹РІРѕРґРёРј СЃРѕРѕР±С‰РµРЅРёРµ РѕР± РѕС€РёР±РєРµ
+		return; // РІС‹С…РѕРґРёРј РёР· С„СѓРЅРєС†РёРё
 	}
-	itemTextCtrl3->SetValue(wxString::Format(wxT("%0.3f"), c)); // выводим результат в компонент c
+	itemTextCtrl3->SetValue(wxString::Format(wxT("%0.3f"), c)); // РІС‹РІРѕРґРёРј СЂРµР·СѓР»СЊС‚Р°С‚ РІ РєРѕРјРїРѕРЅРµРЅС‚ c
 }
 

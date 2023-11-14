@@ -1,9 +1,9 @@
-/////////////////////////////////////////////////////////////////////////////
+﻿/////////////////////////////////////////////////////////////////////////////
 // Name:        mainform.h
 // Purpose:     
 // Author:      Sergey Talipov
 // Modified by: 
-// Created:     03/11/2023 17:35:05
+// Created:     14/11/2023 13:41:03
 // RCS-ID:      
 // Copyright:   15681627-3C745D8E-630127F2
 // Licence:     
@@ -40,8 +40,8 @@
 #define wxID_STATIC_Result 10002
 #define ID_TEXTCTRL_b 10004
 #define ID_TEXTCTRL_c 10005
-#define SYMBOL_MAINFORM_STYLE wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX
-#define SYMBOL_MAINFORM_TITLE wxGetTranslation(wxString() + (wxChar) 0x0414 + (wxChar) 0x0435 + (wxChar) 0x043B + (wxChar) 0x0435 + (wxChar) 0x043D + (wxChar) 0x0438 + (wxChar) 0x0435 + wxT(" 2-") + (wxChar) 0x0445 + wxT(" ") + (wxChar) 0x0446 + (wxChar) 0x0438 + (wxChar) 0x0444 + (wxChar) 0x0440)
+#define SYMBOL_MAINFORM_STYLE wxCAPTION|wxSYSTEM_MENU|wxCLOSE_BOX
+#define SYMBOL_MAINFORM_TITLE wxT("Деление 2-х цифр")
 #define SYMBOL_MAINFORM_IDNAME ID_MAINFORM
 #define SYMBOL_MAINFORM_SIZE wxSize(300, 328)
 #define SYMBOL_MAINFORM_POSITION wxDefaultPosition
