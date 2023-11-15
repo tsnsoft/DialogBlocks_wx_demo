@@ -33,6 +33,18 @@
 
 **Message encoding:** cp866
 
+*Чтобы компилировался проект без BOM в UTF-8 в Debug-конфигурации:*
+
+![srcreenshot](screenshot6.png)
+
+**Extra compile flags:** %AUTO% /utf-8
+
+*Чтобы компилировался проект без BOM в UTF-8 в Release-конфигурации:*
+
+![srcreenshot](screenshot7.png)
+
+**Extra compile flags:** %AUTO% /utf-8
+
 ![srcreenshot](screenshot5.png)
 
 ```
