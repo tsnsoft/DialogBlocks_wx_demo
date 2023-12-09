@@ -39,10 +39,6 @@
 
 **Extra compile flags:** %AUTO% /utf-8
 
-*Чтобы компилировался проект в режиме консоли в конфигурации каждой сборки также укажите:*
-
-**GUI mode:** Console
-
 *Редактировать код можно параллельно в Visual Studio 2022:*
 
 ![srcreenshot](screenshot5.png)
