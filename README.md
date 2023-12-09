@@ -71,6 +71,8 @@ void MainForm::OnButtonClick(wxCommandEvent& event)
 }
 ```
 
+*В DialogBlocks также можно приделывать к меню свои скрипты:*
+
 ![srcreenshot](vcxproj_fix.png)
 
 http://www.anthemion.co.uk/dialogblocks/DialogBlocks-5.18-beta3-Setup.exe
