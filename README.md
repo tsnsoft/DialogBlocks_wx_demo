@@ -13,23 +13,17 @@
 
 **MSBUILDDIR:** C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
 
-**MSVCDIR:**
-
-* *Для сборки wxWidgets:* C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822
-
-* *Для сборки и запуска программ:* C:\Program Files\Microsoft Visual Studio\2022\Community
+**MSVCDIR:** C:\Program Files\Microsoft Visual Studio\2022\Community
 
 **PLATFORMSDK:** C:\Program Files (x86)\Windows Kits\10
 
-
 ![srcreenshot](screenshot4.png)
 
+**VC++ version:** 17 <<-- Microsoft Visual Studio Community 2022 (64-разрядная версия) - Версия 17.8.2
 
-**VC++ version:** 17
+**VC++ tools version:** 14.38.33130 <<-- C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130
 
-**VC++ tools version:** 17.7.6
-
-**Full Platform SDK version**: 10.0.22621.0
+**Full Platform SDK version**: 10.0.22621.0 <<-- C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0
 
 **Message encoding:** cp866
 
@@ -44,6 +38,10 @@
 ![srcreenshot](screenshot7.png)
 
 **Extra compile flags:** %AUTO% /utf-8
+
+*Чтобы компилировался проект в режиме консоли в конфигурации каждой сборки укажите:*
+
+**GUI mode:** Console
 
 ![srcreenshot](screenshot5.png)
 
@@ -72,6 +70,8 @@ void MainForm::OnButtonClick(wxCommandEvent& event)
 ```
 
 ![srcreenshot](vcxproj_fix.png)
+
+http://www.anthemion.co.uk/dialogblocks/DialogBlocks-5.18-beta3-Setup.exe
 
 http://www.anthemion.co.uk/dialogblocks/
 
