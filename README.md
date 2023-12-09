@@ -43,6 +43,8 @@
 
 **GUI mode:** Console
 
+*Редактировать код можно параллельно в Visual Studio 2022:*
+
 ![srcreenshot](screenshot5.png)
 
 ```
