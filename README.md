@@ -21,11 +21,11 @@
 
 **VC++ version:** 17 <<-- Microsoft Visual Studio Community 2022 (64-разрядная версия) - Версия 17.8.2
 
-**VC++ tools version:** 14.38.33130 <<-- C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130
+**VC++ tools version:** 14.41.34120 <<-- C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120
 
 **Full Platform SDK version**: 10.0.22621.0 <<-- C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0
 
-**Message encoding:** cp866
+**Message encoding:** utf-8
 
 *Чтобы компилировался проект без BOM в UTF-8 в Debug-конфигурации:*
 
@@ -67,16 +67,12 @@ void MainForm::OnButtonClick(wxCommandEvent& event)
 }
 ```
 
-*В DialogBlocks также можно приделывать к меню свои скрипты:*
-
-![srcreenshot](vcxproj_fix.png)
-
-http://www.anthemion.co.uk/dialogblocks/DialogBlocks-5.18-beta3-Setup.exe
-
 http://www.anthemion.co.uk/dialogblocks/
 
 https://www.wxwidgets.org/
 
 https://visualstudio.microsoft.com/ru/vs/community/
+
+Редактор картинок в формате "xpm":
 
 http://www.anthemion.co.uk/dialogblocks/ImageBlocks-1.06-Setup.exe
