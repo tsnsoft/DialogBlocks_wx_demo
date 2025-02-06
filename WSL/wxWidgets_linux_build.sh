@@ -3,7 +3,7 @@
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt install build-essential libgtk-3-dev gdb wget -y
+sudo apt install build-essential libgtk-3-dev gdb wget libsqlite3-dev -y
 
 rm -Rf wxWidgets-3.2.6
 
