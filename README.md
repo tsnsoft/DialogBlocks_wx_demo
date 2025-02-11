@@ -1,4 +1,4 @@
-# DialogBlocks_MSVS2022_wx_demo
+# DialogBlocks_wx_demo
 Пример программы на C++ с использованием wxWidgets и DialogBlocks в Visual Studio 2022
 
 ![srcreenshot](screenshot1.png)
@@ -37,7 +37,7 @@ void MainForm::OnButtonClick(wxCommandEvent& event)
 
 http://www.anthemion.co.uk/dialogblocks/
 
-https://github.com/proffix4/dialogblocks_free
+***Бесплатная лицензия на DialogBlocks:*** https://github.com/proffix4/dialogblocks_free
 
 https://www.wxwidgets.org/
 
