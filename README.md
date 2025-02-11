@@ -33,9 +33,6 @@ void MainForm::OnButtonClick(wxCommandEvent& event)
 }
 ```
 
-[📄 DialogBlocks_wxWidgets_Guide(TSN).pdf](DialogBlocks_wxWidgets_Guide(TSN).pdf)
-
-
 ## Ссылки:
 
 http://www.anthemion.co.uk/dialogblocks/
